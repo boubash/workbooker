@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Workbooker</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="next">suivant</string>
+    <string name="terminale">terminale</string>
+    <string name="disserte">disserter</string>
+
+    <string name="dissertation_fragment">Dissertation</string>
+</resources>

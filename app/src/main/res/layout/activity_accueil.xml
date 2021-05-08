@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".ui.AccueilActivity">
+
+    <LinearLayout
+        android:id="@+id/first_bock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="215dp"
+            android:layout_height="215dp"
+            android:layout_weight="1"
+            tools:srcCompat="@drawable/ic_histoire" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="215dp"
+            android:layout_height="215dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_philosophie" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/secondeBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/first_bock"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="215dp"
+            android:layout_height="215dp"
+            android:layout_weight="1"
+            tools:srcCompat="@drawable/ic_onboarding_3" />
+
+        <ImageView
+            android:id="@+id/imageVie"
+            android:layout_width="215dp"
+            android:layout_height="215dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_onboarding_1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/secondeBox"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+    >
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recAccueil"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:padding="20dp"
+            />
+    </LinearLayout>
+
+</RelativeLayout>
