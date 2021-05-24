@@ -37,7 +37,7 @@ class DissertationActivity : AppCompatActivity() {
                 tab, position ->
             when(position){
                 0 -> {
-                    tab.text=("Dissertation")
+                    tab.text= "Dissertation"
                 }
                 1 -> {
                     tab.text = "Commentaire"

@@ -14,7 +14,7 @@ class NiveauActivity : AppCompatActivity() {
         supportActionBar?.hide()
 
         valider_niveau.setOnClickListener{
-            val intent = Intent(this, DissertationActivity::class.java)
+            val intent = Intent(this, MatiereActivity::class.java)
             startActivity(intent)
         }
 
