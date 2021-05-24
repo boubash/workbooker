@@ -27,7 +27,9 @@ class CommentaireFragment : Fragment() {
         com.texte = "dgjdiojgifnogvno slkmdgoifg sdgnoifsd dfknoifds dinodg sdoijsdg "
 
         var commentaires: ArrayList<Commentaire> = ArrayList()
-        commentaires.add(com)
+        for (i in 1..10) {
+            commentaires.add(com)
+        }
 
         recview_commnentaire.apply {
             layoutManager = LinearLayoutManager(activity)

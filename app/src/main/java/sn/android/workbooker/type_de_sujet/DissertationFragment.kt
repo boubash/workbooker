@@ -25,7 +25,9 @@ class DissertationFragment : Fragment() {
 
         val dr = Dissertation("test dkm")
         var dissertations: ArrayList<Dissertation> = ArrayList()
-        dissertations.add(dr)
+        for (i in 1..5) {
+            dissertations.add(dr)
+        }
 
         recview_dissertation.apply {
             layoutManager = LinearLayoutManager(activity)
