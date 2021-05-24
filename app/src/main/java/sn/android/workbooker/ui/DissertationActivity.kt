@@ -2,6 +2,7 @@ package sn.android.workbooker.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.ActionBar
 import androidx.lifecycle.Lifecycle
 import androidx.viewpager2.widget.ViewPager2
 import com.google.android.material.tabs.TabLayout
@@ -21,6 +22,11 @@ class DissertationActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_dissertation)
+
+        val title: String? = intent.getStringExtra("matiereName")
+
+        val actionBar = supportActionBar
+        actionBar!!.title = title
 
         val fragmentList = arrayListOf(
             DissertationFragment(),
@@ -45,6 +51,7 @@ class DissertationActivity : AppCompatActivity() {
                 2 -> {
                     tab.text = "Résumé"
                 }
+
             }
         }.attach()
 

@@ -41,6 +41,7 @@ class HistoireFragment : Fragment() {
 
         floatingActionButtonhr.setOnClickListener {
             val intent = Intent(activity, DissertationActivity::class.java)
+            intent.putExtra("matiereName", "Histoire")
             startActivity(intent)
         }
     }

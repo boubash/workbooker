@@ -42,6 +42,7 @@ class PhilosophieFragment : Fragment() {
 
         floatingActionButtonPh.setOnClickListener {
             val intent = Intent(activity, DissertationActivity::class.java)
+            intent.putExtra("matiereName", "Philosophie")
             startActivity(intent)
         }
     }

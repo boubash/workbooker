@@ -40,6 +40,7 @@ class FrancaisFragment : Fragment() {
 
         floatingActionButtonfr.setOnClickListener {
             val intent = Intent(activity, DissertationActivity::class.java)
+            intent.putExtra("matiereName", "Francais")
             startActivity(intent)
         }
     }

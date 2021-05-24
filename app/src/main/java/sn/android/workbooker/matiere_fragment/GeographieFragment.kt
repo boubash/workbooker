@@ -40,6 +40,7 @@ class GeographieFragment : Fragment() {
 
         floatingActionButtongp.setOnClickListener {
             val intent = Intent(activity, DissertationActivity::class.java)
+            intent.putExtra("matiereName", "Géographie")
             startActivity(intent)
         }
 
