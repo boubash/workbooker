@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.DissertationActivity"></activity>
+        <activity android:name=".ui.MethodologieCommentaireActivity"></activity>
+        <activity android:name=".ui.MethodologieDissertationActivity" />
+        <activity android:name=".ui.DissertationActivity" />
         <activity android:name=".ui.NiveauActivity" />
         <activity android:name=".ui.AccueilActivity" />
         <activity android:name=".ui.MainActivity">

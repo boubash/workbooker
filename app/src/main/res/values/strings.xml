@@ -9,4 +9,8 @@
     <string name="dissertation_fragment">Dissertation</string>
     <string name="commenter">commenter</string>
     <string name="Resumer">Resumer</string>
+    <string name="displaySujet">Afficher le sujet</string>
+    <string name="reform">Reformulation</string>
+    <string name="dev">Développement</string>
+    <string name="conclusion">Conclusion</string>
 </resources>

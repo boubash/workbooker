@@ -15,7 +15,7 @@ class CommentaireAdapter(var context: Context, var commentaires: ArrayList<Comme
 
     override fun onBindViewHolder(holder: CommentaireViewHolder, position: Int) {
         val commentaire: Commentaire = commentaires[position]
-        holder.bindCommentaire(commentaire)
+        holder.bindCommentaire(commentaire, context)
     }
 
     override fun getItemCount(): Int {
