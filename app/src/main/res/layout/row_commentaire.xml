@@ -21,7 +21,7 @@
         <in.workarounds.typography.TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/textSujet"
+            android:id="@+id/textCommentaire"
             app:font_name="Roboto"
             android:textColor="@android:color/background_dark"
             android:textSize="14sp"
@@ -53,21 +53,18 @@
                 app:font_name="Roboto"
                 android:textSize="10sp"
                 android:layout_marginTop="5dp"
-                android:layout_marginStart="5dp"
                 android:layout_marginLeft="5dp"
                 android:layout_weight="1"
                 tools:ignore="SmallSp" />
 
-            <in.workarounds.typography.TextView
-                android:text="@string/disserte"
+            <TextView
+                android:text="@string/commenter"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/commencer_dissert"
+                android:id="@+id/commencer_comment"
                 android:textSize="16sp"
                 android:layout_weight="1"
                 android:textStyle="normal"
-                app:font_name="Roboto"
-                android:textAlignment="center"
                 android:padding="5dp"
                 android:layout_marginEnd="5dp"
                 android:layout_marginTop="5dp"

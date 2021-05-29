@@ -4,17 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".OnBoarding.OnboardingFragment">
+    tools:context=".ui.MethodologieCommentaireActivity">
 
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout_method_com"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints" />
 
     <androidx.viewpager2.widget.ViewPager2
-        android:id="@+id/viewPagerId"
+        android:id="@+id/pager_method_com"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="55dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

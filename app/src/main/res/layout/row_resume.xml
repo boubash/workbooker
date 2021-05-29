@@ -21,7 +21,7 @@
         <in.workarounds.typography.TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/textSujet"
+            android:id="@+id/textResumer"
             app:font_name="Roboto"
             android:textColor="@android:color/background_dark"
             android:textSize="14sp"
@@ -59,15 +59,14 @@
                 tools:ignore="SmallSp" />
 
             <in.workarounds.typography.TextView
-                android:text="@string/disserte"
+                android:text="@string/Resumer"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/commencer_dissert"
+                android:id="@+id/commencer"
                 android:textSize="16sp"
                 android:layout_weight="1"
                 android:textStyle="normal"
                 app:font_name="Roboto"
-                android:textAlignment="center"
                 android:padding="5dp"
                 android:layout_marginEnd="5dp"
                 android:layout_marginTop="5dp"
