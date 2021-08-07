@@ -17,7 +17,7 @@ class DissertationAdapter(var context: Context , var dissertations: ArrayList<Di
 
     override fun onBindViewHolder(holder: DissertationViewHolder, position: Int) {
         val dissertation: Dissertation = dissertations[position]
-        holder.bindDissertation(dissertation)
+        holder.bindDissertation(dissertation, context)
 
     }
 

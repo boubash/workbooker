@@ -11,4 +11,12 @@
     <string name="Resumer">Resumer</string>
     <string name="matiere">Matiere</string>
     <string name="continuer">Continuer</string>
+    <string name="displaySujet">Afficher le sujet</string>
+    <string name="reform">Reformulation</string>
+    <string name="dev">Développement</string>
+    <string name="conclusion">Conclusion</string>
+    <string name="premiere">Premiere</string>
+    <string name="seconde">Seconde</string>
+    <string name="troisieme">Troisieme</string>
+    <string name="choisir_ton_niveau">Choisir ton niveau</string>
 </resources>

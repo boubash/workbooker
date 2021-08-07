@@ -7,28 +7,23 @@ import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
 import sn.android.workbooker.R
 import sn.android.workbooker.adapter.ViewPagerAdapter
-import sn.android.workbooker.type_de_sujet.CommentaireFragment
-import sn.android.workbooker.type_de_sujet.DissertationFragment
-import sn.android.workbooker.type_de_sujet.ResumeFragment
+import sn.android.workbooker.methodologie.ConclusionFragment
+import sn.android.workbooker.methodologie.DeveloppementFragment
+import sn.android.workbooker.methodologie.IntroductionFragment
 
-class DissertationActivity : AppCompatActivity() {
-
+class MethodologieCommentaireActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_dissertation)
-
-        val title: String? = intent.getStringExtra("matiereName")
-        val actionBar = supportActionBar
-        actionBar!!.title = title
+        setContentView(R.layout.activity_methodologie_commentaire)
 
         val fragmentList = arrayListOf(
-            DissertationFragment(),
-            CommentaireFragment(),
-            ResumeFragment()
+            IntroductionFragment(),
+            DeveloppementFragment(),
+            ConclusionFragment()
         )
 
-        val tabLayout = findViewById<TabLayout>(R.id.tab_layout)
-        val viewPager = findViewById<ViewPager2>(R.id.pager)
+        val tabLayout = findViewById<TabLayout>(R.id.tab_layout_method_com)
+        val viewPager = findViewById<ViewPager2>(R.id.pager_method_com)
         val adapter1 = ViewPagerAdapter(fragmentList, supportFragmentManager, lifecycle)
 
         viewPager.adapter = adapter1
@@ -36,16 +31,15 @@ class DissertationActivity : AppCompatActivity() {
                 tab, position ->
             when(position){
                 0 -> {
-                    tab.text= "Dissertation"
+                    tab.text=("Introduction")
                 }
                 1 -> {
-                    tab.text = "Commentaire"
+                    tab.text = "Developpement"
                 }
                 2 -> {
-                    tab.text = "Résumé"
+                    tab.text = "Conclusion"
                 }
             }
         }.attach()
-
     }
 }

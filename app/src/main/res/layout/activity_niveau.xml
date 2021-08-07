@@ -16,50 +16,41 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginStart="10dp"
-        android:layout_marginBottom="30dp"
+        android:layout_marginBottom="20dp"
         android:padding="10dp"
-        android:textSize="25sp"
-        android:text="Choisir ton niveau"
+        android:textSize="20sp"
+        android:text="@string/choisir_ton_niveau"
         android:layout_marginLeft="10dp" />
 
-    <CheckBox
-        android:id="@+id/troisiemeBox"
-        android:gravity="center"
-        android:textSize="20sp"
-        android:layout_margin="10dp"
+    <RadioGroup
+        android:id="@+id/radioGroupNiveau"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Troisieme" />
+        android:layout_height="wrap_content" >
 
-    <CheckBox
-        android:id="@+id/secondeBox"
-        android:layout_margin="10dp"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:textSize="20sp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Seconde" />
+        <RadioButton
+            android:id="@+id/rbTroisieme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/troisieme" />
 
-    <CheckBox
-        android:id="@+id/premiereBox"
-        android:layout_margin="10dp"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:textSize="20sp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Premiere" />
+        <RadioButton
+            android:id="@+id/rbSeconde"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/seconde" />
 
-    <CheckBox
-        android:id="@+id/terminal"
-        android:layout_margin="10dp"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:textSize="20sp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Terminal" />
+        <RadioButton
+            android:id="@+id/rbPremiere"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/premiere" />
+
+        <RadioButton
+            android:id="@+id/rbTerminale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/terminale" />
+    </RadioGroup>
 
     <Button
         android:id="@+id/valider_niveau"
@@ -68,4 +59,6 @@
         android:gravity="center"
         android:layout_marginTop="20dp"
         android:text="Valider" />
+
+
 </LinearLayout>
